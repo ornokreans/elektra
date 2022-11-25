@@ -35,7 +35,7 @@ const config = {
   ),
   bundle: true,
   platform: "browser",
-  // format: "esm",
+  format: "esm",
   // splitting: true,
   outdir: "app/assets/builds",
   plugins: [
@@ -54,6 +54,9 @@ const config = {
     }),
   ],
   //loader: { ".js": "jsx" },
+  //define: { process: { env: { NODE_ENV: "production" } } },
+
+  // "chrome58", "firefox57", "safari11", "edge18" -> first version supporting "esm"
   target: ["es6", "chrome58", "firefox57", "safari11", "edge18"],
   // watch: watch && {
   //   onRebuild(error, result) {
@@ -69,9 +72,9 @@ const config = {
   // },
   minify: production,
   sourcemap: !production,
-  inject: [path.resolve(__dirname, "./react-shim.js")],
+  //inject: [path.resolve(__dirname, "./react-shim.js")],
   // map global this to window
-  define: { this: "window" },
+  define: { this: "window", "process.env.NODE_ENV": '"production"' },
   allowOverwrite: true,
   loader: {
     // built-in loaders: js, jsx, ts, tsx, css, json, text, base64, dataurl, file, binary
@@ -83,6 +86,14 @@ const config = {
     ".woff2": "file",
     ".inline.css": "text",
   },
+  logLevel: "info",
+  external: [
+    "react",
+    "react-dom",
+    "react-router-dom",
+    "prop-types",
+    "prop-types-extra",
+  ],
 }
 
 const grey = "\x1b[30m%s\x1b[0m"

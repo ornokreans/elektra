@@ -5,6 +5,56 @@
     %meta(name="viewport" content="width=device-width, initial-scale=1")
 
     %title= page_title
+
+    %script{ async:"async", src:"https://ga.jspm.io/npm:es-module-shims@1.6.2/dist/es-module-shims.js" }
+    =# javascript_include_tag "importmap" , type:"importmap-shim"
+    =#%script{ type:"importmap-shim", src:"/assets/importmap.json" }
+    =# https://generator.jspm.io/#U2NhYGCVD80rySzJSU1hKCjKL9AtqSxILdZNrSgpSnQw1ANCJGEHQ1M9C6BIUWpicoluSn6ug6GZnqGJngFUpCi/tCS1CCxhqmesZwIRhikCAPtvn4tuAA
+    %script{ type:"importmap-shim"}
+      {
+      "imports": {
+      "prop-types": "https://ga.jspm.io/npm:prop-types@15.8.1/index.js",
+      "prop-types-extra": "https://ga.jspm.io/npm:prop-types-extra@1.1.1/lib/index.js",
+      "prop-types-extra/lib/elementType": "https://ga.jspm.io/npm:prop-types-extra@1.1.1/lib/elementType.js",
+      "prop-types-extra/lib/all": "https://ga.jspm.io/npm:prop-types-extra@1.1.1/lib/all.js",
+      "prop-types-extra/lib/isRequiredForA11y": "https://ga.jspm.io/npm:prop-types-extra@1.1.1/lib/isRequiredForA11y.js",
+      "prop-types-extra/lib/utils/createChainableTypeChecker": "https://ga.jspm.io/npm:prop-types-extra@1.1.1/lib/utils/createChainableTypeChecker.js",
+      "react": "https://ga.jspm.io/npm:react@16.14.0/index.js",
+      "react-dom": "https://ga.jspm.io/npm:react-dom@16.14.0/index.js",
+      "react-router-dom": "https://ga.jspm.io/npm:react-router-dom@5.3.4/esm/react-router-dom.js"
+      },
+      "scopes": {
+      "https://ga.jspm.io/": {
+      "@babel/runtime/helpers/esm/extends": "https://ga.jspm.io/npm:@babel/runtime@7.20.1/helpers/esm/extends.js",
+      "@babel/runtime/helpers/esm/inheritsLoose": "https://ga.jspm.io/npm:@babel/runtime@7.20.1/helpers/esm/inheritsLoose.js",
+      "@babel/runtime/helpers/esm/objectWithoutPropertiesLoose": "https://ga.jspm.io/npm:@babel/runtime@7.20.1/helpers/esm/objectWithoutPropertiesLoose.js",
+      "history": "https://ga.jspm.io/npm:history@4.10.1/index.js",
+      "hoist-non-react-statics": "https://ga.jspm.io/npm:hoist-non-react-statics@3.3.2/dist/hoist-non-react-statics.cjs.js",
+      "isarray": "https://ga.jspm.io/npm:isarray@0.0.1/index.js",
+      "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js",
+      "path-to-regexp": "https://ga.jspm.io/npm:path-to-regexp@1.8.0/index.js",
+      "react-is": "https://ga.jspm.io/npm:react-is@16.13.1/index.js",
+      "react-router": "https://ga.jspm.io/npm:react-router@5.3.4/esm/react-router.js",
+      "resolve-pathname": "https://ga.jspm.io/npm:resolve-pathname@3.0.0/index.js",
+      "scheduler": "https://ga.jspm.io/npm:scheduler@0.19.1/index.js",
+      "tiny-invariant": "https://ga.jspm.io/npm:tiny-invariant@1.3.1/dist/esm/tiny-invariant.js",
+      "tiny-warning": "https://ga.jspm.io/npm:tiny-warning@1.0.3/dist/tiny-warning.esm.js",
+      "value-equal": "https://ga.jspm.io/npm:value-equal@1.0.1/index.js",
+      "warning": "https://ga.jspm.io/npm:warning@4.0.3/warning.js"
+      },
+      "https://ga.jspm.io/npm:history@4.10.1/": {
+      "tiny-invariant": "https://ga.jspm.io/npm:tiny-invariant@1.3.1/dist/tiny-invariant.cjs.js"
+      }
+      }
+      }
+
+    = javascript_include_tag "object_storage_ng_app_widget" , type:"module-shim"
+    %script
+      //import React from "react"
+      //console.log(React)
+      window.process = {  env: { NODE_ENV: "production" } } 
+
+
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     -# = content_for :javascripts do
     :javascript

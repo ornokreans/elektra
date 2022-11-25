@@ -1,0 +1,11 @@
+{
+  "imports": {
+    "react": "https://ga.jspm.io/npm:react@16.14.0/dev.index.js"
+  },
+  "scopes": {
+    "https://ga.jspm.io/": {
+      "object-assign": "https://ga.jspm.io/npm:object-assign@4.1.1/index.js",
+      "prop-types/checkPropTypes": "https://ga.jspm.io/npm:prop-types@15.8.1/dev.checkPropTypes.js"
+    }
+  }
+}

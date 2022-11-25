@@ -1,4 +1,5 @@
 import { arrayFlatMap, objectFromEntries } from "./polyfill"
+import React from "react"
 
 const bases = {
   "": { scale: "none" }, // countable things

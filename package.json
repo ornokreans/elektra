@@ -88,6 +88,9 @@
     "redux-mock-store": "1.5.4",
     "tailwindcss": "^3.2.1"
   },
+  "peerDependencies": {
+    "react": "^16.10.0"
+  },
   "scripts": {
     "test": "NODE_ENV=test jest --config jest.config.js",
     "build": "node ./config/esbuild/build.js",
