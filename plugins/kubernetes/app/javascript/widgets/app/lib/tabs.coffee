@@ -1,3 +1,4 @@
+import React from "react"
 ReactTabs = ({tabsConfig, activeTabUid, onSelect}) ->
   return null unless tabsConfig and tabsConfig.length
 

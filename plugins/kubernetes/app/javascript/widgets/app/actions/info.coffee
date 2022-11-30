@@ -1,5 +1,6 @@
 import * as constants from "../constants"
 import {ajaxHelper} from "./ajax_helper"
+import React from "react"
 
 # -------------- KUBERNIKUS INFO ---------------
 requestInfo = () ->

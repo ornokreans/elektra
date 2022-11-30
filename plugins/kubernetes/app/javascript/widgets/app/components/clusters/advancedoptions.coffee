@@ -1,7 +1,7 @@
 import { connect } from "react-redux"
 import "../../lib/form_helpers.coffee"
 import { updateAdvancedOptions, changeVersion} from "../../actions/clusters.coffee"
-
+import React from "react"
 
 AdvancedOptions = ({
   clusterForm,

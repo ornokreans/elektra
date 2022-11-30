@@ -1,4 +1,5 @@
 ReactHelpers = {}
+import React from "react"
 
 ReactHelpers.mergeObjects = (obj1,obj2,obj3={}) ->
   result = {}

@@ -1,4 +1,5 @@
 import "./helpers.coffee"
+import React from "react"
 
 ReactFormHelpers = {}
 

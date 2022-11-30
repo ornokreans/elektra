@@ -1,5 +1,5 @@
 import "./helpers.coffee"
-
+import React from "react"
 import { connect } from "react-redux"
 
 ReactModal = {

@@ -1,4 +1,5 @@
 import "./modal"
+import React from "react"
 
 ReactConfirmDialog = ({title,message,confirmCallback,cancelCallback,close}) ->
   React.createElement 'div',  null,

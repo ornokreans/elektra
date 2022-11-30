@@ -1,4 +1,5 @@
 import "./modal"
+import React from "react"
 
 ReactErrorDialog = ({title,message,close}) ->
   React.createElement 'div',  null,

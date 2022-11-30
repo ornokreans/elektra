@@ -2,6 +2,7 @@
 import { connect } from "react-redux"
 import { loadClusterEvents } from "../../actions"
 import moment from "moment"
+import React from "react"
 
 class Events extends React.Component 
 

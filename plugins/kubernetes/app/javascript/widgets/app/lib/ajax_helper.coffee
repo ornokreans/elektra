@@ -1,3 +1,5 @@
+import React from "react"
+
 class ReactAjaxHelper
   constructor: (rootUrl, options={}) ->
     @rootUrl = rootUrl

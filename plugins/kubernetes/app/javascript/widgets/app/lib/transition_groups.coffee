@@ -1,4 +1,5 @@
 ReactCSSTransitionGroup = React.createFactory React.addons.CSSTransitionGroup
+import React from "react"
 
 @ReactTransitionGroups = {}
 

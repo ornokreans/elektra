@@ -5,6 +5,7 @@ import "../lib/modal"
 import {loadMetaData} from "./meta_data.coffee"
 import {loadInfo} from "./info.coffee"
 import {showConfirmDialog} from "./dialogs.coffee"
+import React from "react"
 #################### CLUSTERS #########################
 # ---- list ----
 requestClusters = () ->

@@ -2,6 +2,7 @@
 import { connect } from "react-redux"
 import ClusterItem from "./item.coffee"
 import { fetchClusters, openNewClusterDialog } from "../../actions"
+import React from "react"
 
 class Clusters extends React.Component 
 
