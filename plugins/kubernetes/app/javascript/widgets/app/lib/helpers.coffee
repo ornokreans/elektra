@@ -59,7 +59,4 @@ ReactHelpers.getItemAttribute = (items, itemId, itemIdKey, attributeKey) ->
 ReactHelpers.isEmpty = (s) ->
   return true if s? && s.length == 0
 
-
-
-
 window.ReactHelpers = ReactHelpers

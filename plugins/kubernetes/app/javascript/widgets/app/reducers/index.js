@@ -7,6 +7,7 @@ import "../lib/modal"
 import { combineReducers } from "redux"
 
 const AppReducers = combineReducers({
+  // eslint-disable-next-line no-undef
   modals: ReactModal.Reducer,
   clusters: clusters,
   clusterForm: clusterForm,

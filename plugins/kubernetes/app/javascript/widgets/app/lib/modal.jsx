@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import "./helpers.coffee"
 import { connect } from "react-redux"
 import React from "react"
@@ -64,7 +65,7 @@ ReactModal.Wrapper = (title, WrappedComponent, options = {}) =>
       <div
         className="modal fade"
         data-backdrop={options.static === true ? "static" : true}
-        tab-index="-1"
+        tabIndex="-1"
         ref={modalRef}
         role="dialog"
         aria-labelledby="myModalLabel"
@@ -81,10 +82,9 @@ ReactModal.Wrapper = (title, WrappedComponent, options = {}) =>
                 <button
                   type="button"
                   className="close"
-                  dataDismiss="modal"
-                  ariaLabel="Close"
+                  data={{ dismiss: "modal" }}
                 >
-                  <span ariaHidden="true">x</span>
+                  <span>x</span>
                 </button>
               )}
               <h4 className="modal-title">{title}</h4>
